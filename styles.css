@@ -46,10 +46,10 @@ main{
     width: 350px;
     height: 250px;
     padding: 30px;
-    border-radius: 15px;
-    gap: 8px;
+    border-radius: 3px;
+    gap: 5px;
     color: white;
-    box-shadow: 4px 4px 9px black;
+    box-shadow: -5px 10px 5px rgb(250, 17, 29);
     cursor: pointer;
 
     & img{
