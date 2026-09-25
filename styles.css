@@ -1,0 +1,74 @@
+*{ /*reseta o css pois todo navegador tem um estilo padrão*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*largura e altura passam a incluir preechimento*/
+}
+
+html{ 
+    background-color: #a4b16c;
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto; /*ajusta automaticamente a aparência da fonte*/
+}
+
+nav{ /*área de navegação/menu.*/
+    background-color: #f1b649;
+    padding: 10px; /*espaço interno, preenchimento*/
+    height: 70px;
+    position: fixed;
+    width: 100%;
+
+    & select { /*estiliza os <select> dentro do <nav>. seria como nav select*/
+        padding: 5px;
+        background-color: #c9b6cc;
+        color: white;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: row; /* Opcional, pois 'row' é o padrão */
+}
+
+#funcionario-container{ /*seleciona um elemento pelo ID*/
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.card{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9d8ca1;
+    width: 350px;
+    height: 250px;
+    padding: 30px;
+    border-radius: 15px;
+    gap: 8px;
+    color: white;
+    box-shadow: 4px 4px 9px black;
+    cursor: pointer;
+
+    & img{
+        border-radius: 100px;
+        width: 130px;
+        height: 130px;
+    }
+
+    & img:hover{ /* equevile a: .card img:hover / animação de quando passa o mouse*/
+        width: 160px;
+        height: 160px;
+        transition: 1.5s;
+        box-shadow:6px 4px 8px  #ebd50f;
+    }
+}
+
+
+.card:hover{ 
+    box-shadow: 8px 8px 15px rgb(56, 42, 42);
+    transition: 0.3;
+}
+
